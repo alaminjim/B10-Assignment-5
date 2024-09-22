@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +13,79 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header></header>
+    <header class="p-10">
+      <header class="h-[180px] sticky top-0">
+        <section class="p-12 flex justify-between">
+          <div>
+            <button class="btn btn-success">Home</button>
+          </div>
+          <div class="flex">
+            <img src="./assets/logo.png" alt="" />
+            <p class="m-4 text-xl font-bold">As-Sunnah Foundation</p>
+          </div>
+          <div class="flex">
+            <button class="btn">
+              <img src="./assets/coin.png" alt="" />10000
+            </button>
+          </div>
+        </section>
+      </header>
+    </header>
+    <main class="p-10 pt-28">
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What is Document Object Model?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The Document Object Model (DOM) is a programming API for HTML and
+            XML documents. It defines the logical structure of documents and the
+            way a document is accessed and manipulated.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          What is the Full meaning off HTML?
+        </div>
+        <div class="collapse-content">
+          <p>
+            HTML stands for Hyper Text Markup Language. HTML is the standard
+            markup language for creating Web pages. HTML describes the structure
+            of a Web page.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          What is the full meaning of CSS?
+        </div>
+        <div class="collapse-content">
+          <p>
+            CSS is the acronym of “Cascading Style Sheets”. CSS is a computer
+            language for laying out and structuring web pages (HTML or XML).
+            This language contains coding elements and is composed of these
+            “cascading style sheets” which are equally called CSS files (. css).
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How to use js in DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            JavaScript, the language of the web, empowers developers to create
+            dynamic and interactive web pages. One of the key features that
+            enables this interactivity is Document Object Model (DOM)
+            manipulation.
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
