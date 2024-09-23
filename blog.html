@@ -17,10 +17,10 @@
     />
   </head>
   <body>
-    <header class="lg:w-[1440px] h-[180px] sticky top-0">
+    <header class="sticky top-0 backdrop-blur-3xl">
       <section class="p-12 flex justify-around">
         <div class="mr-14">
-          <button class="btn btn-success">Blog</button>
+          <button id="chng-btn" class="btn btn-success">Blog</button>
         </div>
         <div class="flex mr-5">
           <img class="hidden lg:block" src="./assets/logo.png" alt="" />
@@ -28,7 +28,9 @@
         </div>
         <div class="flex">
           <button class="btn">
-            <img src="./assets/coin.png" alt="" />10000
+            <img src="./assets/coin.png" alt="" />
+            <span id="bank-balance">10000</span>
+            <p>BDT</p>
           </button>
         </div>
       </section>
@@ -49,9 +51,11 @@
                 class="max-w-sm mx-auto lg:max-w-lg rounded-lg shadow-2xl"
               />
               <div class="p-2">
-                <button class="btn">
-                  <img src="./assets/coin.png" alt="" />5000 BDT
-                </button>
+                <div class="flex">
+                  <img src="./assets/coin.png" alt="" />
+                  <span id="donate-money" class="pl-2">0</span>
+                  <p class="pl-3">BDT</p>
+                </div>
                 <h1 class="text-xl lg:text-5xl font-bold">
                   Flooding in Eastern Bangladesh Noakhali
                 </h1>
@@ -67,15 +71,44 @@
                   Lakshmipur, and four in Cox’s Bazar.
                 </p>
                 <input
+                  id="add-money-field"
                   class="w-full lg:w-[500px] h-[45px] p-2"
                   type="text"
                   placeholder="Your Donation Amount:"
                 />
                 <div class="pt-3 flex justify-center">
-                  <button class="btn btn-success w-full lg:w-[400px] h-[45px]">
+                  <button
+                    id="add-money-btn"
+                    class="btn btn-success w-full lg:w-[400px] h-[45px]"
+                  >
                     Donate Now
                   </button>
                 </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <!-- <button
+                  class="btn btn-success w-full lg:w-[400px] h-[45px]"
+                  id="add-money-btn"
+                  onclick="my_modal_5.showModal()"
+                >
+                  Donate Now
+                </button>
+                <dialog
+                  id="my_modal_5"
+                  class="modal modal-bottom sm:modal-middle"
+                >
+                  <div class="modal-box">
+                    <h3 class="text-lg font-bold">Hello!</h3>
+                    <p class="py-4">
+                      Press ESC key or click the button below to close
+                    </p>
+                    <div class="modal-action">
+                      <form method="dialog">
+                         if there is a button in form, it will close the modal -->
+                <!-- <button class="btn">Close</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog> -->
               </div>
             </div>
           </div>
@@ -91,7 +124,9 @@
               />
               <div>
                 <button class="btn">
-                  <img src="./assets/coin.png" alt="" />5000 BDT
+                  <img src="./assets/coin.png" alt="" />
+                  <span id="second-donate-money">0</span>
+                  <p>BDT</p>
                 </button>
                 <h1 class="text-xl lg:text-5xl font-bold">
                   Flooding in Eastern Bangladesh Feni
@@ -107,12 +142,16 @@
                   Mizan Road in Feni.
                 </p>
                 <input
+                  id="second-add-money-field"
                   class="w-full lg:w-[500px] h-[45px] p-2"
                   type="text"
                   placeholder="Your Donation Amount:"
                 />
                 <div class="pt-3 flex justify-center">
-                  <button class="btn btn-success w-full lg:w-[400px] h-[45px]">
+                  <button
+                    id="second-add-money-btn"
+                    class="btn btn-success w-full lg:w-[400px] h-[45px]"
+                  >
                     Donate Now
                   </button>
                 </div>
@@ -126,58 +165,19 @@
           <div class="hero bg-base-200">
             <div class="hero-content flex-col lg:flex-row">
               <img
-                src="./assets/Flood-921ae03ffc09ca078648d8580def5424.jpg"
-                class="max-w-sm mx-auto lg:max-w-xl rounded-lg shadow-2xl"
+                src="./assets/quota-protest.png"
+                class="max-w-sm mx-auto lg:max-w-lg rounded-lg shadow-2xl"
               />
               <div class="p-2">
                 <button class="btn">
-                  <img src="./assets/coin.png" alt="" />5000 BDT
-                </button>
-                <h1 class="text-xl lg:text-5xl font-bold">
-                  Flooding in Eastern Bangladesh Cumilla
-                </h1>
-                <p class="py-6">
-                  Six deaths were reported in the Comilla district in the last
-                  three days due to continuous rain and worsening flood
-                  situation. The flood situation in Comilla on Thursday worsened
-                  as the water level in the Gomti River rose due to heavy
-                  rainfall and inflow from upstream. The deaths occurred in
-                  various areas including Salahuddin intersection in Comilla
-                  city, Laksham, Chauddagram, and Nangalkot upazilas. Among
-                  them, one died on Thursday, four on Wednesday, and one on
-                  Tuesday.
-                </p>
-                <input
-                  class="w-full lg:w-[500px] h-[45px] p-2"
-                  type="text"
-                  placeholder="Your Donation Amount:"
-                />
-                <div class="pt-3 flex justify-center">
-                  <button class="btn btn-success w-full lg:w-[400px] h-[45px]">
-                    Donate Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="pt-4">
-          <div class="hero bg-base-200">
-            <div class="hero-content flex-col lg:flex-row-reverse">
-              <img
-                src="./assets/quota-protest.png"
-                class="rounded-lg shadow-2xl mx-auto"
-              />
-              <div>
-                <button class="btn">
-                  <img src="./assets/coin.png" alt="" />5000 BDT
+                  <img src="./assets/coin.png" alt="" />
+                  <span id="third-donate-money">0</span>
+                  <p>BDT</p>
                 </button>
                 <h1 class="text-xl lg:text-5xl font-bold">
                   Bangladesh quota reform movement
                 </h1>
-                <p class="py-6">
+                <p class="py-6 mt-2">
                   On 15 July 2024, students of Dhaka University were sitting.
                   with placards and flags in a peaceful protest calling for
                   reforms, on the quota allocation for government jobs in
@@ -190,56 +190,14 @@
                   protesters.
                 </p>
                 <input
-                  class="w-full lg:w-[500px] h-[45px] p-2"
-                  type="text"
-                  placeholder="Your Donation Amount:"
-                />
-                <div class="pt-3 flex justify-center">
-                  <button class="btn btn-success w-full lg:w-[400px] h-[45px]">
-                    Donate Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="pt-4">
-        <div>
-          <div class="hero bg-base-200">
-            <div class="hero-content flex-col lg:flex-row">
-              <img
-                src="./assets/301479-1536x893.jpg"
-                class="max-w-sm mx-auto lg:max-w-lg rounded-lg shadow-2xl"
-              />
-              <div class="p-2">
-                <button class="btn">
-                  <img src="./assets/coin.png" alt="" />5000 BDT
-                </button>
-                <h1 class="text-xl lg:text-5xl font-bold">
-                  What happened to Abu Sayed?
-                </h1>
-                <p class="py-6 mt-2">
-                  Abu Sayed, a student of English at the Rangpur’s Begum Rokeya
-                  University, stood his ground. As the police closed in, he
-                  spread his arms wide open, in a moment of defiance. In a
-                  seemingly intentional and unjustifiable attack, the police
-                  fired directly at his chest. At least two police officers
-                  discharged 12-gauge shotguns directly towards him from across
-                  the street – a distance of merely 15 meters. Sayed clutched
-                  his chest on impact as officers fired at least two more times
-                  using birdshot, ammunition that is designed for hunting which
-                  is extremely dangerous, inherently inaccurate and thus
-                  unlawful for use in the policing of protests. Sayed posed no
-                  apparent physical threat to the police.
-                </p>
-                <input
+                  id="third-add-money-field"
                   class="w-full mt-3 lg:w-[500px] h-[45px] p-2"
                   type="text"
                   placeholder="Your Donation Amount:"
                 />
                 <div class="pt-3 flex justify-center">
                   <button
+                    id="third-add-money-btn"
                     class="btn btn-success w-full mt-2 lg:w-[400px] h-[45px]"
                   >
                     Donate Now
@@ -251,5 +209,7 @@
         </div>
       </section>
     </main>
+    <script src="js/blogLocation.js"></script>
+    <script src="js/Donate.js"></script>
   </body>
 </html>
