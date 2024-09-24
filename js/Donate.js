@@ -8,7 +8,7 @@ document
 
     const currentBalance = document.getElementById("donate-money").innerText;
 
-    if (addMoney < 0 || isNaN(addMoney)) {
+    if (addMoney < 0 || isNaN(addMoney) || addMoney > currentBalance) {
       alert("please correct amount and try again");
     } else {
       const newAddMoney = parseFloat(addMoney);
@@ -43,7 +43,11 @@ document
       "second-donate-money"
     ).innerText;
 
-    if (addFeniMoney < 0 || isNaN(addFeniMoney)) {
+    if (
+      addFeniMoney < 0 ||
+      isNaN(addFeniMoney) ||
+      addFeniMoney > currentMoney
+    ) {
       alert("please correct amount and try again");
     } else {
       const newAddMoney = parseFloat(addFeniMoney);
@@ -77,7 +81,11 @@ document
     const currentBalance =
       document.getElementById("third-donate-money").innerText;
 
-    if (addQuotaMoney < 0 || isNaN(addQuotaMoney)) {
+    if (
+      addQuotaMoney < 0 ||
+      isNaN(addQuotaMoney) ||
+      addQuotaMoney > currentBalance
+    ) {
       alert("please correct amount and try again");
     } else {
       const newAddMoney = parseFloat(addQuotaMoney);
