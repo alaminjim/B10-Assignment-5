@@ -24,6 +24,9 @@ document
       console.log(remainingBalance);
       document.getElementById("bank-balance").innerText = remainingBalance;
     }
+    const p = document.createElement("p");
+    p.innerText = `Donation to Noakhali ${addMoney} tk`;
+    document.getElementById("show-tranjection").appendChild(p);
   });
 
 // second card......................
@@ -56,6 +59,9 @@ document
       console.log(remainingMoney);
       document.getElementById("bank-balance").innerText = remainingMoney;
     }
+    const p = document.createElement("p");
+    p.innerText = `Donation to Feni ${addFeniMoney} tk`;
+    document.getElementById("second-show-tranjection").appendChild(p);
   });
 
 // 3rd Card...................
@@ -87,4 +93,7 @@ document
       console.log(remainingBalance);
       document.getElementById("bank-balance").innerText = remainingBalance;
     }
+    const p = document.createElement("p");
+    p.innerText = `Donation to Quota ${addQuotaMoney} tk`;
+    document.getElementById("third-show-tranjection").appendChild(p);
   });

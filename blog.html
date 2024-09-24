@@ -40,185 +40,163 @@
           <button id="history-btn" class="btn">History</button>
         </div>
     </header>
-    <main
-      id="main-container"
-      class="lg:w-[1440px] lg:h-[1080] lg:p-24 pt-6"
-    >
-     
-      </section>
-      <section class="pt-4">
-        <div class="">
-          <div class="lg:hero lg:bg-base-200">
-            <div class="hero-content flex-col lg:flex-row">
-              <img
-                src="./assets/noakhali.png"
-                class="max-w-sm mx-auto lg:max-w-lg rounded-lg shadow-2xl"
-              />
-              <div class="p-2">
-                <div class="flex">
-                  <img src="./assets/coin.png" alt="" />
-                  <span id="donate-money" class="pl-2">0</span>
-                  <p class="pl-3">BDT</p>
-                </div>
-                <h1 class="text-xl lg:text-5xl font-bold">
-                  Flooding in Eastern Bangladesh Noakhali
-                </h1>
-                <p class="py-6">
-                  Since 20 August 2024, heavy rainfall combined with the release
-                  of water from upstream in India has triggered severe flooding
-                  in several districts of Bangladesh, including Feni, Noakhali,
-                  Comilla, Lakshmipur, Brahmanbaria, Cox's Bazar, Khagrachhari,
-                  Chattogram, Habiganj, and Moulvibazar.The sudden floods have
-                  resulted in the deaths of 13 people, including two women.
-                  Among the deceased, four died in Cumilla, one in Feni, four in
-                  Chattogram, one in Noakhali, one in Brahmanbaria, one in
-                  Lakshmipur, and four in Cox’s Bazar.
-                </p>
-                <input
-                  id="add-money-field"
-                  class="w-full lg:w-[500px] h-[45px] p-2"
-                  type="text"
-                  placeholder="Your Donation Amount:"
+    <main>
+     <section  id="main-container"
+      class="lg:w-[1440px] lg:h-[1080] lg:p-24 pt-6">
+        <section class="pt-4">
+          <div class="">
+            <div class="lg:hero lg:bg-base-200">
+              <div class="hero-content flex-col lg:flex-row">
+                <img
+                  src="./assets/noakhali.png"
+                  class="max-w-sm mx-auto lg:max-w-lg rounded-lg shadow-2xl"
                 />
-                <div class="pt-3 flex justify-center">
-                  <button
-                    id="add-money-btn"
-                    class="btn btn-success w-full lg:w-[400px] h-[45px]"
-                  >
-                    Donate Now
-                  </button>
+                <div class="p-2">
+                  <div class="flex">
+                    <img src="./assets/coin.png" alt="" />
+                    <span id="donate-money" class="pl-2">0</span>
+                    <p class="pl-3">BDT</p>
+                  </div>
+                  <h1 class="text-xl lg:text-5xl font-bold">
+                    Flooding in Eastern Bangladesh Noakhali
+                  </h1>
+                  <p class="py-6">
+                    Since 20 August 2024, heavy rainfall combined with the release
+                    of water from upstream in India has triggered severe flooding
+                    in several districts of Bangladesh, including Feni, Noakhali,
+                    Comilla, Lakshmipur, Brahmanbaria, Cox's Bazar, Khagrachhari,
+                    Chattogram, Habiganj, and Moulvibazar.The sudden floods have
+                    resulted in the deaths of 13 people, including two women.
+                    Among the deceased, four died in Cumilla, one in Feni, four in
+                    Chattogram, one in Noakhali, one in Brahmanbaria, one in
+                    Lakshmipur, and four in Cox’s Bazar.
+                  </p>
+                  <input
+                    id="add-money-field"
+                    class="w-full lg:w-[500px] h-[45px] p-2"
+                    type="text"
+                    placeholder="Your Donation Amount:"
+                  />
+                  <div class="pt-3 flex justify-center">
+                    <button
+                      id="add-money-btn"
+                      class="btn btn-success w-full lg:w-[400px] h-[45px]"
+                    >
+                      Donate Now
+                    </button>
+                  </div>
                 </div>
-                <!-- Open the modal using ID.showModal() method -->
-                <!-- <button
-                    class="btn btn-success w-full lg:w-[400px] h-[45px]"
-                    id="add-money-btn"
-                    onclick="my_modal_5.showModal()"
-                  >
-                    Donate Now
-                  </button>
-                  <dialog
-                    id="my_modal_5"
-                    class="modal modal-bottom sm:modal-middle"
-                  >
-                    <div class="modal-box">
-                      <h3 class="text-lg font-bold">Hello!</h3>
-                      <p class="py-4">
-                        Press ESC key or click the button below to close
-                      </p>
-                      <div class="modal-action">
-                        <form method="dialog">
-                           if there is a button in form, it will close the modal -->
-                <!-- <button class="btn">Close</button>
-                        </form>
-                      </div>
-                    </div>
-                  </dialog> -->
               </div>
             </div>
           </div>
+        </section>
+        <section>
+          <div class="pt-4">
+            <div class="hero bg-base-200">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <img
+                  src="./assets/feni.png"
+                  class="mx-auto rounded-lg shadow-2xl"
+                />
+                <div>
+                  <button class="btn">
+                    <img src="./assets/coin.png" alt="" />
+                    <span id="second-donate-money">0</span>
+                    <p>BDT</p>
+                  </button>
+                  <h1 class="text-xl lg:text-5xl font-bold">
+                    Flooding in Eastern Bangladesh Feni
+                  </h1>
+                  <p class="py-6">
+                    The death toll in the recent flash floods in Feni has risen to
+                    23, according to district administration sources as of Friday
+                    night. The floods, caused by the upwelling of water from India
+                    and heavy rains, have submerged six upazilas, leaving hundreds
+                    of thousands of people stranded. The first fatality was
+                    reported on the night of August 24, when locals discovered a
+                    body floating in knee-deep water in front of Sonali Bank on
+                    Mizan Road in Feni.
+                  </p>
+                  <input
+                    id="second-add-money-field"
+                    class="w-full lg:w-[500px] h-[45px] p-2"
+                    type="text"
+                    placeholder="Your Donation Amount:"
+                  />
+                  <div class="pt-3 flex justify-center">
+                    <button
+                      id="second-add-money-btn"
+                      class="btn btn-success w-full lg:w-[400px] h-[45px]"
+                    >
+                      Donate Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pt-4">
+          <div>
+            <div class="hero bg-base-200">
+              <div class="hero-content flex-col lg:flex-row">
+                <img
+                  src="./assets/quota-protest.png"
+                  class="max-w-sm mx-auto lg:max-w-lg rounded-lg shadow-2xl"
+                />
+                <div class="p-2">
+                  <button class="btn">
+                    <img src="./assets/coin.png" alt="" />
+                    <span id="third-donate-money">0</span>
+                    <p>BDT</p>
+                  </button>
+                  <h1 class="text-xl lg:text-5xl font-bold">
+                    Bangladesh quota reform movement
+                  </h1>
+                  <p class="py-6 mt-2">
+                    On 15 July 2024, students of Dhaka University were sitting.
+                    with placards and flags in a peaceful protest calling for
+                    reforms, on the quota allocation for government jobs in
+                    Bangladesh. Suddenly, they were attacked by individuals armed
+                    with rods, sticks and clubs with. a few even brandishing
+                    revolvers. Within hours, a pattern emerged across the country
+                    with similar attacks. coordinated,by people believed to be.
+                    members of the Bangladesh Chatra League (BCL), a group
+                    affiliated with the ruling Awami League (AL), against student
+                    protesters.
+                  </p>
+                  <input
+                    id="third-add-money-field"
+                    class="w-full mt-3 lg:w-[500px] h-[45px] p-2"
+                    type="text"
+                    placeholder="Your Donation Amount:"
+                  />
+                  <div class="pt-3 flex justify-center">
+                    <button
+                      id="third-add-money-btn"
+                      class="btn btn-success w-full mt-2 lg:w-[400px] h-[45px]"
+                    >
+                      Donate Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="history-container" class="hidden">
+        <div id="show-tranjection" class="text-3xl font-bold p-10 pl-14 shadow-lg w-[590px] h[100px] ">
+
         </div>
-      </section>
-      <section>
-        <div class="pt-4">
-          <div class="hero bg-base-200">
-            <div class="hero-content flex-col lg:flex-row-reverse">
-              <img
-                src="./assets/feni.png"
-                class="mx-auto rounded-lg shadow-2xl"
-              />
-              <div>
-                <button class="btn">
-                  <img src="./assets/coin.png" alt="" />
-                  <span id="second-donate-money">0</span>
-                  <p>BDT</p>
-                </button>
-                <h1 class="text-xl lg:text-5xl font-bold">
-                  Flooding in Eastern Bangladesh Feni
-                </h1>
-                <p class="py-6">
-                  The death toll in the recent flash floods in Feni has risen to
-                  23, according to district administration sources as of Friday
-                  night. The floods, caused by the upwelling of water from India
-                  and heavy rains, have submerged six upazilas, leaving hundreds
-                  of thousands of people stranded. The first fatality was
-                  reported on the night of August 24, when locals discovered a
-                  body floating in knee-deep water in front of Sonali Bank on
-                  Mizan Road in Feni.
-                </p>
-                <input
-                  id="second-add-money-field"
-                  class="w-full lg:w-[500px] h-[45px] p-2"
-                  type="text"
-                  placeholder="Your Donation Amount:"
-                />
-                <div class="pt-3 flex justify-center">
-                  <button
-                    id="second-add-money-btn"
-                    class="btn btn-success w-full lg:w-[400px] h-[45px]"
-                  >
-                    Donate Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div id="second-show-tranjection" class="text-3xl font-bold p-10 pl-14 shadow-lg w-[590px] h[100px]">
+  
         </div>
-      </section>
-      <section class="pt-4">
-        <div>
-          <div class="hero bg-base-200">
-            <div class="hero-content flex-col lg:flex-row">
-              <img
-                src="./assets/quota-protest.png"
-                class="max-w-sm mx-auto lg:max-w-lg rounded-lg shadow-2xl"
-              />
-              <div class="p-2">
-                <button class="btn">
-                  <img src="./assets/coin.png" alt="" />
-                  <span id="third-donate-money">0</span>
-                  <p>BDT</p>
-                </button>
-                <h1 class="text-xl lg:text-5xl font-bold">
-                  Bangladesh quota reform movement
-                </h1>
-                <p class="py-6 mt-2">
-                  On 15 July 2024, students of Dhaka University were sitting.
-                  with placards and flags in a peaceful protest calling for
-                  reforms, on the quota allocation for government jobs in
-                  Bangladesh. Suddenly, they were attacked by individuals armed
-                  with rods, sticks and clubs with. a few even brandishing
-                  revolvers. Within hours, a pattern emerged across the country
-                  with similar attacks. coordinated,by people believed to be.
-                  members of the Bangladesh Chatra League (BCL), a group
-                  affiliated with the ruling Awami League (AL), against student
-                  protesters.
-                </p>
-                <input
-                  id="third-add-money-field"
-                  class="w-full mt-3 lg:w-[500px] h-[45px] p-2"
-                  type="text"
-                  placeholder="Your Donation Amount:"
-                />
-                <div class="pt-3 flex justify-center">
-                  <button
-                    id="third-add-money-btn"
-                    class="btn btn-success w-full mt-2 lg:w-[400px] h-[45px]"
-                  >
-                    Donate Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div id="third-show-tranjection" class="text-3xl font-bold p-10 pl-14 shadow-lg w-[590px] h[100px]">
+  
         </div>
       </section>
     </main>
-    <footer
-      id="history-container"
-      
-    >
-      <h1>history list</h1>
-    </footer>
     <script src="js/blogLocation.js"></script>
     <script src="js/Donate.js"></script>
     <script src="js/features.js"></script>
