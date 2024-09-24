@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog page</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+      </style>
+      
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -16,7 +20,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
   </head>
-  <body>
+  <body class="font-lexend">
     <header class="sticky top-0 backdrop-blur-3xl">
       <section class="p-12 flex justify-around">
         <div class="mr-14">
@@ -27,11 +31,11 @@
           <p class="lg:m-4 lg:text-xl lg:font-bold">As-Sunnah Foundation</p>
         </div>
         <div class="flex">
-          <button class="btn">
-            <img src="./assets/coin.png" alt="" />
-            <span id="bank-balance">10000</span>
-            <p>BDT</p>
-          </button>
+          <div class="flex p-2">
+            <img class="pr-2 pb-3" src="./assets/coin.png" alt="" />
+            <span id="bank-balance">10000</span> 
+            <p class="pl-1">BDT</p>
+          </div>
         </div>
       </section>
       <section>
@@ -49,7 +53,7 @@
               <div class="hero-content flex-col lg:flex-row">
                 <img
                   src="./assets/noakhali.png"
-                  class="max-w-sm mx-auto lg:max-w-lg rounded-lg shadow-2xl"
+                  class="max-w-full mx-auto lg:max-w-lg rounded-lg shadow-2xl"
                 />
                 <div class="p-2">
                   <div class="flex">
@@ -96,7 +100,7 @@
               <div class="hero-content flex-col lg:flex-row-reverse">
                 <img
                   src="./assets/feni.png"
-                  class="mx-auto rounded-lg shadow-2xl"
+                  class="mx-auto  rounded-lg shadow-2xl"
                 />
                 <div>
                   <button class="btn">
@@ -142,7 +146,7 @@
               <div class="hero-content flex-col lg:flex-row">
                 <img
                   src="./assets/quota-protest.png"
-                  class="max-w-sm mx-auto lg:max-w-lg rounded-lg shadow-2xl"
+                  class="max-w-full mx-auto lg:max-w-lg rounded-lg shadow-2xl"
                 />
                 <div class="p-2">
                   <button class="btn">
@@ -186,14 +190,11 @@
         </section>
       </section>
       <section id="history-container" class="hidden">
-        <div id="show-tranjection" class="text-3xl font-bold p-10 pl-14 shadow-lg w-[590px] h[100px] ">
-
+        <div id="show-tranjection" class="text-lg p-8 lg:text-3xl font-bold lg:p-10 lg:pl-14 shadow-lg lg:w-[590px] lg:h[100px] ">
         </div>
-        <div id="second-show-tranjection" class="text-3xl font-bold p-10 pl-14 shadow-lg w-[590px] h[100px]">
-  
+        <div id="second-show-tranjection" class="text-lg p-8 lg:text-3xl font-bold lg:p-10 pl-14 shadow-lg lg:w-[590px] lg:h[100px]">
         </div>
-        <div id="third-show-tranjection" class="text-3xl font-bold p-10 pl-14 shadow-lg w-[590px] h[100px]">
-  
+        <div id="third-show-tranjection" class="text-lg p-8 lg:text-3xl font-bold lg:p-10 lg:pl-14 shadow-lg lg:w-[590px] lg:h[100px]">
         </div>
       </section>
     </main>
