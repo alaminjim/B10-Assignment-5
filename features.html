@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>features</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="sticky top-0 backdrop-blur-3xl">
+      <section class="p-12 flex justify-around">
+        <div class="mr-14">
+          <button id="chng-btn" class="btn btn-success">Blog</button>
+        </div>
+        <div class="flex mr-5">
+          <img class="hidden lg:block" src="./assets/logo.png" alt="" />
+          <p class="lg:m-4 lg:text-xl lg:font-bold">As-Sunnah Foundation</p>
+        </div>
+        <div class="flex">
+          <button class="btn">
+            <img src="./assets/coin.png" alt="" />
+            <span id="bank-balance">10000</span>
+            <p>BDT</p>
+          </button>
+        </div>
+      </section>
+      <section>
+        <div class="flex justify-center space-x-2">
+          <button id="donate-btn" class="btn btn-success">Donate</button>
+          <button id="history-btn" class="btn">History</button>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
